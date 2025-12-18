@@ -50,7 +50,7 @@
         "name": "Supply Fan Speed",
         "reg_type": "holding",
         "address": 10,
-        "type": "text",
+        "type": "value",
         "format": "u16",
         "enum": [0, 2, 3, 5, 8, 9, 10, 11, 12, 13, 14],
         "enum_titles": [
@@ -73,7 +73,7 @@
         "name": "Exhaust Fan Speed",
         "reg_type": "holding",
         "address": 11,
-        "type": "text",
+        "type": "value",
         "format": "u16",
         "enum": [0, 2, 3, 5, 8, 9, 10, 11, 12, 13, 14],
         "enum_titles": [
