@@ -11,7 +11,7 @@
     "parameters": {
       "speed_control": {
         "title": "Fan speed control",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": 23,
         "default": 2,
         "enum": [0, 1, 2],
@@ -25,7 +25,7 @@
       },
       "device_adress": {
         "title": "ModBus address",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "8",
         "default": 1,
         "min": 1,
@@ -37,7 +37,7 @@
     "channels": [
       {
         "name": "Power",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": 9,
         "type": "switch",
         "format": "u16",
@@ -48,7 +48,7 @@
       },
       {
         "name": "Supply Fan Speed",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": 10,
         "type": "value",
         "format": "u16",
@@ -71,7 +71,7 @@
       },
       {
         "name": "Exhaust Fan Speed",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": 11,
         "type": "value",
         "format": "u16",
@@ -94,7 +94,7 @@
       },
       {
         "name": "Exhaust Temperature",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "12",
         "type": "temperature",
         "format": "u16",
@@ -105,7 +105,7 @@
       },
       {
         "name": "Outside Temperature",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "13",
         "type": "temperature",
         "format": "u16",
@@ -116,7 +116,7 @@
       },
       {
         "name": "Intake Temperature",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "14",
         "type": "temperature",
         "format": "u16",
@@ -127,7 +127,7 @@
       },
       {
         "name": "Bypass opening temperature threshold",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "2",
         "type": "range",
         "format": "u16",
@@ -138,7 +138,7 @@
       },
       {
         "name": "Bypass opening delta",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "3",
         "type": "range",
         "format": "u16",
@@ -149,8 +149,8 @@
       },
       {
         "name": "Defrosting interval",
-        "reg_type": "holding",
-        "address": "6",
+        "reg_type": "holding_single",
+        "address": "4",
         "type": "range",
         "format": "u16",
         "default": 3,
@@ -160,7 +160,7 @@
       },
       {
         "name": "Defrosting enter temperature",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "5",
         "type": "range",
         "format": "s8",
@@ -172,8 +172,8 @@
       },
       {
         "name": "Defrost duration time",
-        "reg_type": "holding",
-        "address": "4",
+        "reg_type": "holding_single",
+        "address": "6",
         "type": "range",
         "format": "u16",
         "default": 10,
@@ -183,7 +183,7 @@
       },
       {
         "name": "Bypass Status",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "18:1:1",
         "type": "switch",
         "format": "u16",
@@ -194,7 +194,7 @@
       },
       {
         "name": "Defrost Status",
-        "reg_type": "holding",
+        "reg_type": "holding_single",
         "address": "18:3:1",
         "type": "switch",
         "format": "u16",
